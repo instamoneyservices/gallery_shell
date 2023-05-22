@@ -114,7 +114,7 @@ cat > "$MY_INDEX_HTML_FILE" << EOF
 <header>
 	<div class="navbar navbar-dark bg-dark shadow-sm">
 		<div class="container">
-			<a href="#" class="navbar-brand">
+			<a href="/" class="navbar-brand">
 				<strong>$MY_TITLE</strong>
 			</a>
 		</div>
