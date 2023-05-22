@@ -13,8 +13,8 @@ MY_HEIGHT_LARGE=768
 MY_QUALITY=85
 MY_THUMBDIR="__thumbs"
 MY_INDEX_HTML_FILE="index.html"
-MY_TITLE="Gallery"
-MY_FOOTER='Created with <a href="https://github.com/Cyclenerd/gallery_shell">gallery.sh</a>'
+MY_TITLE="Peter Højlund Palluth Gallery"
+MY_FOOTER='/ hoejlund@pm.me /'
 
 # Use convert from ImageMagick
 MY_CONVERT_COMMAND="convert" 
@@ -22,7 +22,7 @@ MY_CONVERT_COMMAND="convert"
 MY_EXIF_COMMAND="jhead"
 
 # Bootstrap 4
-MY_CSS="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css"
+MY_CSS="./style.css"
 
 # Debugging output
 # true=enable, false=disable 
