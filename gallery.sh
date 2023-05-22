@@ -15,8 +15,6 @@ MY_THUMBDIR="__thumbs"
 MY_INDEX_HTML_FILE="index.html"
 MY_TITLE="Peter Højlund Palluth"
 
-FOLDER_TITLE=basename "$PWD"
-
 MY_FOOTER='/ hoejlund@pm.me /'
 
 # Use convert from ImageMagick
@@ -157,6 +155,7 @@ echo '</div>' >> "$MY_INDEX_HTML_FILE"
 ## Generate the HTML Files for Images in thumbdir
 MY_FILE=0
 while [[ $MY_FILE -lt $MY_NUM_FILES ]]; do
+	MY_FOLDER=${PWD##*/}
 	MY_FILENAME=${MY_FILELIST[$MY_FILE]}
 	MY_PREV=""
 	MY_NEXT=""
@@ -180,9 +179,10 @@ while [[ $MY_FILE -lt $MY_NUM_FILES ]]; do
 <header>
 	<div class="navbar navbar-dark bg-dark shadow-sm">
 		<div class="container">
-			<a href="../index.html" class="navbar-brand">
+			<a href="../../index.html" class="navbar-brand">
 				<strong>$MY_TITLE</strong>
 			</a>
+			<a href="../index.html"><small>$MY_FOLDER</small></a>
 		</div>
 	</div>
 </header>
