@@ -8,12 +8,13 @@
 #### Configuration Section
 #########################################################################################
 
-MY_HEIGHT_SMALL=406
-MY_HEIGHT_LARGE=768
-MY_QUALITY=85
+MY_HEIGHT_SMALL=806
+MY_HEIGHT_LARGE=1168
+MY_QUALITY=95
 MY_THUMBDIR="__thumbs"
 MY_INDEX_HTML_FILE="index.html"
-MY_TITLE="Peter Højlund Palluth Gallery"
+MY_TITLE="Peter Højlund Palluth 
+"
 MY_FOOTER='/ hoejlund@pm.me /'
 
 # Use convert from ImageMagick
