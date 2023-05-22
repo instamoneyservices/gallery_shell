@@ -181,12 +181,14 @@ while [[ $MY_FILE -lt $MY_NUM_FILES ]]; do
 		<div class="container">
 			<a href="../../index.html" class="navbar-brand">
 				<strong>$MY_TITLE</strong>
-			</a>
+			</a> / 
 			<a href="../index.html"><small>$MY_FOLDER</small></a>
 		</div>
 	</div>
 </header>
 <main class="container">
+<div class="col d-none d-md-block text-center"><h3>$MY_FILENAME</h3></div>
+
 EOF
 
 	# Pager
@@ -198,7 +200,6 @@ EOF
 	fi
 	cat >> "$MY_IMAGE_HTML_FILE" << EOF
 </div>
-<div class="col d-none d-md-block text-center"><h3>$MY_FILENAME</h3></div>
 <div class="col text-right">
 EOF
 	if [[ $MY_NEXT ]]; then
