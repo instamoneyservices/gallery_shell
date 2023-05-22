@@ -13,8 +13,11 @@ MY_HEIGHT_LARGE=1168
 MY_QUALITY=95
 MY_THUMBDIR="__thumbs"
 MY_INDEX_HTML_FILE="index.html"
-MY_TITLE="Peter Højlund Palluth 
-"
+MY_TITLE="Peter Højlund Palluth"
+
+FOLDER_TITLE=${PWD##*/}          # to assign to a variable
+FOLDER_TITLE=${result:-/}
+
 MY_FOOTER='/ hoejlund@pm.me /'
 
 # Use convert from ImageMagick
@@ -116,6 +119,9 @@ cat > "$MY_INDEX_HTML_FILE" << EOF
 		<div class="container">
 			<a href="/" class="navbar-brand">
 				<strong>$MY_TITLE</strong>
+			</a>
+			<a href="#">
+			<small>$FOLDER_TITLE</small>
 			</a>
 		</div>
 	</div>
