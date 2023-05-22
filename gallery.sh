@@ -15,8 +15,7 @@ MY_THUMBDIR="__thumbs"
 MY_INDEX_HTML_FILE="index.html"
 MY_TITLE="Peter Højlund Palluth"
 
-FOLDER_TITLE=${PWD##*/}          # to assign to a variable
-FOLDER_TITLE=${result:-/}
+FOLDER_TITLE=basename "$PWD"
 
 MY_FOOTER='/ hoejlund@pm.me /'
 
