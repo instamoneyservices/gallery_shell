@@ -198,7 +198,7 @@ EOF
 	if [[ $MY_PREV ]]; then
 		echo '<a href="'"$MY_PREV"'.html" accesskey="p" title="⌨️ PC: [Alt]+[Shift]+[P] / MAC: [Control]+[Option]+[P]" class="btn btn-secondary " role="button">&laquo; Previous</a>' >> "$MY_IMAGE_HTML_FILE"
 	else
-		echo '<a href="#" class="btn btn-secondary  disabled" role="button" aria-disabled="true">&laquo; Previous</a>' >> "$MY_IMAGE_HTML_FILE"
+		echo '<a href="'"${MY_FILELIST[$MY_NUM_FILES - 1]}"'.html" accesskey="p" title="⌨️ PC: [Alt]+[Shift]+[P] / MAC: [Control]+[Option]+[P]" class="btn btn-secondary" role="button">&laquo; Previous</a>' >> "$MY_IMAGE_HTML_FILE"
 	fi
 	cat >> "$MY_IMAGE_HTML_FILE" << EOF
 </div>
@@ -207,7 +207,7 @@ EOF
 	if [[ $MY_NEXT ]]; then
 		echo '<a href="'"$MY_NEXT"'.html" accesskey="n" title="⌨️ PC: [Alt]+[Shift]+[N] / MAC: [Control]+[Option]+[N]" class="btn btn-secondary ">Next &raquo;</a>' >> "$MY_IMAGE_HTML_FILE"
 	else
-		echo '<a href="#" class="btn btn-secondary  disabled" role="button" aria-disabled="true">Next &raquo;</a>' >> "$MY_IMAGE_HTML_FILE"
+		echo '<a href="'"${MY_FILELIST[0]}"'.html" accesskey="n" title="⌨️ PC: [Alt]+[Shift]+[N] / MAC: [Control]+[Option]+[N]" class="btn btn-secondary" role="button">Next &raquo;</a>' >> "$MY_IMAGE_HTML_FILE"
 	fi
 	echo '</div></div>' >> "$MY_IMAGE_HTML_FILE"
 
