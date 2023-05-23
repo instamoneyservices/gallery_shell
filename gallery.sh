@@ -173,7 +173,7 @@ while [[ $MY_FILE -lt $MY_NUM_FILES ]]; do
 <title>$MY_FILENAME</title>
 <meta name="viewport" content="width=device-width">
 <meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="$MY_CSS">
+<link rel="stylesheet" href="../../$MY_CSS">
 </head>
 <body>
 <header>
