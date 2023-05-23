@@ -108,7 +108,7 @@ cat > "$MY_INDEX_HTML_FILE" << EOF
 	<title>$MY_TITLE</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="robots" content="noindex, nofollow">
-	<link rel="stylesheet" href="$MY_CSS">
+	<link rel="stylesheet" href="../$MY_CSS">
 </head>
 <body>
 <header>
