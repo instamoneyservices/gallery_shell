@@ -8,8 +8,8 @@
 #### Configuration Section
 #########################################################################################
 
-MY_HEIGHT_SMALL=456
-MY_HEIGHT_LARGE=818
+MY_HEIGHT_SMALL=556
+MY_HEIGHT_LARGE=918
 MY_QUALITY=95
 MY_THUMBDIR="__thumbs"
 MY_INDEX_HTML_FILE="index.html"
