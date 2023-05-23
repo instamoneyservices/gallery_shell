@@ -23,7 +23,7 @@ MY_CONVERT_COMMAND="convert"
 MY_EXIF_COMMAND="jhead"
 
 # Bootstrap 4
-MY_CSS="./style.css"
+MY_CSS="style.css"
 MY_SCRIPT="script.js"
 
 # Debugging output
