@@ -24,6 +24,7 @@ MY_EXIF_COMMAND="jhead"
 
 # Bootstrap 4
 MY_CSS="./style.css"
+MY_SCRIPT="script.js"
 
 # Debugging output
 # true=enable, false=disable 
@@ -174,6 +175,7 @@ while [[ $MY_FILE -lt $MY_NUM_FILES ]]; do
 <meta name="viewport" content="width=device-width">
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="../../$MY_CSS">
+<script src="../../$MY_SCRIPT">
 </head>
 <body>
 <header>
